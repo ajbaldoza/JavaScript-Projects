@@ -10,3 +10,5 @@ document.write(A)
 
 var Family = "Dogs", Dad = "Corgi", Mom="Husky";
 document.write(Family)
+
+document.write(1+3);//function is adding 1+3 which is = 4
