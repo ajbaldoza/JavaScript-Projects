@@ -8,3 +8,7 @@ function myfunction(){
 
 document.write(10E400)
 document.write(-10E400)
+
+document.write(22>23)
+
+console.log(2>2)
