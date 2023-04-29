@@ -22,3 +22,8 @@ function modulus_Operator(){
     var simple_Math = 25 % 6;
     document.getElementById('math').innerHTML = "When you divide 25 by 6 you have a remainder of: " + simple_Math;
 }
+
+function negation_operator() {
+    var x = 10;
+    document.getElementById('math').innerHTML = -x;
+}
