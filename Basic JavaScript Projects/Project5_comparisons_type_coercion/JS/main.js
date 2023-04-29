@@ -1,1 +1,1 @@
-document.write('ten + 10')
+document.write('ten' + 10)
