@@ -4,3 +4,9 @@ function myFunction() {
     var yourtxt = document.getElementById("txt")
     yourtxt.innerHTML = "You clicked!"
 }
+
+function myFunction(){
+    var run = "I am running";
+    run += " faster than you!";
+    document.getElementById('add').innerHTML = run;
+}
