@@ -1,12 +1,6 @@
-function myFunction() {
-    var mytxt = document.getElementById("txt");
-    mytxt.innerHTML = "You tapped!"
-    var yourtxt = document.getElementById("txt")
-    yourtxt.innerHTML = "You clicked!"
-}
 
 function myFunction(){
-    var run = "I am running";
-    run += " faster than you!";
-    document.getElementById('add').innerHTML = run;
+    var run = "I am running";//creating variable
+    run += " faster than you!";//using the += operator to add variable
+    document.getElementById('add').innerHTML = run;//using document.getElementById()
 }
