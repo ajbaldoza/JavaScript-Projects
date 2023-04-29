@@ -27,3 +27,11 @@ function negation_operator() {
     var x = 10;
     document.getElementById('math').innerHTML = -x;
 }
+
+var X = 5;
+X++;
+document.write(X);
+
+var X = 5;
+X--;
+document.write(X);
