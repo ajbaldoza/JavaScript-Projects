@@ -1,39 +1,41 @@
-function addition_function(){
-    var addition = 2+2;
-    document.getElementById('math').innerHTML = "2+2=" + addition;
+function addition(){//defining the function
+    var add = 2+2;
+    document.getElementById('add').innerHTML = "2+2= " + add;//show result
 }
 
-function subtraction_function(){
-    var subtraction = 2-2;
-    document.getElementById('math').innerHTML = "2-2=" + subtraction;
+function subtraction(){
+    var sub = 2-2;
+    document.getElementById('sub').innerHTML = "2-2=" + sub;
 }
 
 function multiplication(){
-    var simple_Math = 2*2;
-    document.getElementById('math').innerHTML = "2*2=" + simple_Math;
+    var mult= 2*2;
+    document.getElementById('mult').innerHTML = "2*2=" + mult;
 }
 
-function more_Math(){
-    var simple_Math = (2+2) * 10/2-5;
-    document.getElementById('math').innerHTML = "2 plus 2, multiplied by 10,divided in half and then subtracted by 5 equals " + simple_Math;
+function division(){
+    var divide = 10/2;
+    document.getElementById('div').innerHTML = "10/2=" + divide;
 }
 
-function modulus_Operator(){
-    var simple_Math = 25 % 6;
-    document.getElementById('math').innerHTML = "When you divide 25 by 6 you have a remainder of: " + simple_Math;
+function modulus_operator(){
+    var modulus = 25 % 6;
+    document.getElementById('mod').innerHTML = "When you divide 25 by 6 you have a remainder of: " + modulus;
 }
 
-function negation_operator() {
-    var x = 10;
-    document.getElementById('math').innerHTML = -x;
+function Increment(){
+    var X = document.getElementById('increment').innerHTML;
+    X++;
+    document.getElementById('increment').innerHTML = "";
 }
 
-var X = 5;
-X++;
-document.write(X);
+function Decrement(){
+    var value = document.getElementById('decrement').innerHTML;
+    value--;
+    document.getElementById('decrement').innerHTML = "";
+}
 
-var X = 5;
-X--;
-document.write(X);
+function random(){
+    document.getElementById('ran').innerHTML = Math.random()*99;
+}
 
-window.alert(Math.random() * 1000)
