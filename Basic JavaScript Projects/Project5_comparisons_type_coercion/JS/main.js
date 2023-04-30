@@ -31,3 +31,10 @@ document.write(m===n)
 u = 'five'
 i = 'ten'
 document.write(u===i)
+
+document.write(10>5 || 5>1)
+document.write(10>20 || 5>11)
+
+function not_Function() {
+    document.getElementById('Not').innerHTML = !(20>10);
+}
