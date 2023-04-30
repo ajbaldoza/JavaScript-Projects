@@ -39,7 +39,7 @@ function Input_Decimal(dot) {
 
 //This section handles operators
 function Handle_Operator(Next_Operator) {
-    const {First_Operand, Display_Value, operator}= Calculator;
+    const {First_Operand, Display_Value, operator} = Calculator;
     //When an operator key is pressed we convert the current number
     //displayed on the screento a number and then store the result in
     //Calculator.First_Operand if it doesn't already exist.
@@ -47,26 +47,26 @@ function Handle_Operator(Next_Operator) {
     //Checks if an operator already exists and if Wait_Second_Operand is true,
     //then updates the operator an exits from the function.
     if (operator && Calculator.Wait_Second_Operand) {
-        Calculator.operator= Next_Operator;
+        Calculator.operator = Next_Operator;
         return;
     }
     if (First_Operand == null) {
         Calculator.First_Operand = Value_of_Input;
-    } else if (operator) {//Checks if an operator already exists
+    } else if (operator) { //Checks if an operator already exists
         const Value_Now = First_Operand || 0;
         //If operator exists, property lookup is performed for the operator
         //in the Perform_Calculation object and the function that matches the
         //operator is exexcuted.
-        let result= Perform_Calculation[operator](Value_Now, Value_of_Input);
+        let result = Perform_Calculation[operator](Value_Now, Value_of_Input);
         //Here we add a fixed amount of numbers after the decimal.
-        result= Number(result).toFixed (9);
+        result = Number(result).toFixed (9);
         //This will remove any trailing 0's
-        result= (result *1).toString();
+        result = (result *1).toString();
         Calculator.Display_Value = parseFloat(result);
         Calculator.First_Operand = parseFloat(result);
     }
-    Calculator.Wait_Second_Operand = true;
-    Calculator.operator = Next_Operator;
+        Calculator.Wait_Second_Operand = true;
+        Calculator.operator = Next_Operator;
 }
 
 const Perform_Calculation = {
@@ -80,19 +80,19 @@ function Calculator_Reset() {
     Calculator.Display_Value = '0';
     Calculator.First_Operand = null;
     Calculator.Wait_Second_Operand = false;
-    Calculator.operator= null;
+    Calculator.operator = null;
 }
 //This function updates the calculator screen with the contents of Display_Value
 function Update_Display() {
     //Makes use of the calculator-screen class to target the
     //input tag in the HTML document
-    const display = document.querySelector(' .calculator-screen');
+    const display = document.querySelector('.calculator-screen');
     display.value = Calculator.Display_Value;
 }
 
 Update_Display();
 //This section monitors button clicks
-const keys= document.querySelector('.calculator-keys');
+const keys = document.querySelector('.calculator-keys');
 keys.addEventListener('click', (event) => {
     //The target variable is an object that represents the element
     //that was clicked.
