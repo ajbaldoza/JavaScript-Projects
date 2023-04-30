@@ -24,7 +24,7 @@ html {
     font-size : 5rem;
     height : 80px;
     border : none;
-    background-color :black;
+    background-color :rgb(59, 57, 57);
     color : white;
     text-align : right;
     padding-right : 20px;
@@ -38,7 +38,7 @@ button {
     border : lpx solid  darkslategray;
     background-color : transparent;
     font-size : 3.2rem;
-    color : black;
+    color : rgb(53, 51, 51);
     background-image : linear-gradient (to bottom, transparent, transparent 50%, rgba( 0 , 0 , 0 , 0.6 ) ) ;
     text-shadow : 0 lpx rgba(255, 255, 255, .4) ;
     /*Each value below is separated by a comma ',' after the rgba values*/
@@ -59,13 +59,13 @@ button:hover {
 }
 
 .all-clear {
-    background-color: red;
+    background-color: rgb(4, 0, 255);
     border-color: darkslategray ;
     color: #ffffff;
 }
 
 .equal-sign {
-    background-color: blue ;
+    background-color: rgb(28, 216, 90) ;
     border-color: darkslategray ;
     color: #fff;
     height: 100%;
