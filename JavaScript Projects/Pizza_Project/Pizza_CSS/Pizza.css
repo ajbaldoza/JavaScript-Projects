@@ -24,6 +24,13 @@
     font-family: sans-serif;
 }
 
+.middle {
+    width: 200px;
+    height: 200px;
+    float: left;
+    font-family: sans-serif;
+}
+
 .right {
     width: 200px;
     height: 200px;
