@@ -2,6 +2,7 @@
     width: 400px;
     height: 470px;
     margin: 10px auto;
+    background-color: bisque;
 }
 
 #frmMenu {
@@ -45,4 +46,9 @@
     margin: 10px 0px 0px 100px;
     width: 100px;
     height: 40px;
+}
+
+h1, h3 {
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
 }
