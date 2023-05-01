@@ -21,12 +21,14 @@
     width: 200px;
     height: 200px;
     float: left;
+    font-family: sans-serif;
 }
 
 .right {
     width: 200px;
     height: 200px;
     float: right;
+    font-family: sans-serif;
 }
 
 #showText {
@@ -46,6 +48,7 @@
     margin: 10px 0px 0px 100px;
     width: 100px;
     height: 40px;
+    background-color: rgb(83, 83, 83);
 }
 
 h1, h3 {
