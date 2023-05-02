@@ -1,7 +1,7 @@
 function getReceipt(){
     //this initializes our string so it can get passed from
     //func to func, grwoing line by lien into a full receipt
-    var text1 = <h3>You Ordered:</h3>;
+    var text1 = "<h3>You Ordered:</h3>";
     var runningTotal = 0;
     var sizeTotal = 0;
     var sizeArray = document.getElementsByClassName('size');
